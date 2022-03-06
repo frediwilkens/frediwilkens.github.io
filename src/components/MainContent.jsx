@@ -1,10 +1,10 @@
 import React from 'react'
-
+import myimage from '../my-image.jpeg';
 function MainContent() {
   return (
     <main>
       <div>
-          IMG
+          <img className='my-image' src={ myimage } alt="frederico wilkens" />
       </div>
       <div>
         <p className="my-name">

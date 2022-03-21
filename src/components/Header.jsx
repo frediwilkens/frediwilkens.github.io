@@ -1,16 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <header>
+    <header className='header-content'>
       <div>
-        <p>Home</p>
+        <Link className='header-link' to='/'>Home</Link>
       </div>
       <div>
-        <p>About</p>
+      <Link className='header-link' to='/about'>About</Link>
       </div>
       <div>
-        <p>Projects</p>
+      <Link className='header-link' to='/projects'>Projects</Link>
       </div>
     </header>
   );

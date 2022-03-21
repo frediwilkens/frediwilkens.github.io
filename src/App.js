@@ -1,15 +1,21 @@
-import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import MainContent from './components/MainContent';
+import './Home.css';
+import './About.css';
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
   return (
-    <>
-      <Header />
-      <MainContent />
-      <Footer />
-    </>
+    <BrowserRouter basename={ process.env.PUBLIC_URL }>
+      <Switch>
+        <Route exact path='/' component={ Home } />
+        <Route exact path='/about' component={ About } />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

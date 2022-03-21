@@ -1,0 +1,52 @@
+@media screen and (min-width: 500px) and (min-height: 600px) {
+  .about-content {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about-me-info {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: justify;
+  }
+  
+  .about-me-info p {
+    line-height: 6vh;
+    font-size: 4vh;
+    width: 80%;
+  }
+
+  .trybe-link {
+    color: forestgreen;
+    text-decoration: none;
+  }
+
+  .trybe-link:hover {
+    color: black;
+  }
+
+  .general-info {
+    height: 45%;
+    width: 45%;
+    font-size: 3vh;
+  }
+
+  .curiosity-info {
+    height: 45%;
+    width: 45%;
+    font-size: 3vh;
+  }
+
+  h2 {
+    font-size: 4vh;
+    text-align: center;
+  }
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  background-color: #b2e1cc;
+  font-family: 'Comfortaa', cursive;
+}
+
+#root {
+  height: 100%;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-content {
+  font-size: 16px;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 2px solid white;
+}
+
+.header-link {
+  text-decoration: none;
+  color: white;
+}
+
+.header-link:hover {
+  color: black;
+}
+
+.header-link:active {
+  color: gray;
+}
+
+.main-content {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.my-image {
+  height: 40vh;
+  border-radius: 30vh;
+}
+  
+.my-name {
+  font-size: 25px;
+}
+  
+.job-title {
+  font-size: 15px;
+   margin-left: 5px;
+}
+
+footer {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 2px solid white;
+} 
+
+.a-link {
+  font-size: 40px;
+  color: white;
+}
+
+@media screen and (min-width: 500px) {
+  .header-content {
+    height: 15%;
+  }
+
+  .main-content {
+   flex-direction: row;
+  }
+
+  .my-image {
+    height: 55vh;
+  }
+
+  .footer-content {
+    height: 15%;
+  }
+}
+
+@media screen and (min-width: 500px) and (min-height: 600px) {
+  .header-content {
+    font-size: 4vh;
+  }
+
+  .my-image {
+    height: 45vh;
+  }
+
+  .my-name {
+    font-size: 5vh;
+  }
+
+  .job-title {
+    font-size: 3vh;
+  }
+
+  .a-link {
+    font-size: 7vh;
+  }
+
+  .linkedin:hover {
+    color: #0e76a8;
+  }
+  
+  .github:hover {
+    color: black;
+  }
+}

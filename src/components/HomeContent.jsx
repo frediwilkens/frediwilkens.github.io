@@ -1,8 +1,8 @@
 import React from 'react'
 import myimage from '../my-image.jpeg';
-function MainContent() {
+function HomeContent() {
   return (
-    <main>
+    <main className='main-content'>
       <div>
           <img className='my-image' src={ myimage } alt="frederico wilkens" />
       </div>
@@ -18,4 +18,4 @@ function MainContent() {
   )
 }
 
-export default MainContent;
+export default HomeContent;

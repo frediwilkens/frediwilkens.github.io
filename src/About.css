@@ -1,52 +1,113 @@
+.about-content {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-info {
+  border-bottom: 2px dashed white;
+  height: 35%;
+  width: 95%;
+}
+
+.about-me-info p {
+  font-size: 2.6vh;
+  text-align: justify;
+}
+
+.general-info {
+  height: 30%;
+  width: 95%;
+  border-bottom: 2px dashed white;
+}
+
+.general-info li {
+  font-size: 2.6vh;
+}
+
+.curiosity-info {
+  height: 30%;
+  width: 95%;
+}
+
+.curiosity-info li {
+  font-size: 2.6vh;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 3vh;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.trybe-link {
+  color: forestgreen;
+  text-decoration: none;
+}
+
+.trybe-link:hover {
+  color: black;
+}
+
 @media screen and (min-width: 500px) and (min-height: 600px) {
   .about-content {
-    height: 75%;
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
   }
 
   .about-me-info {
-    height: 100%;
-    width: 45%;
+    height: 95%;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
     text-align: justify;
+    border-bottom: none;
+    border-right: 2px dashed white;
   }
   
   .about-me-info p {
-    line-height: 6vh;
-    font-size: 4vh;
-    width: 80%;
+    font-size: 3.5vh;
+    width: 85%;
+    height: fit-content;
   }
 
-  .trybe-link {
-    color: forestgreen;
-    text-decoration: none;
-  }
 
-  .trybe-link:hover {
-    color: black;
-  }
 
   .general-info {
-    height: 45%;
+    height: 30%;
     width: 45%;
-    font-size: 3vh;
+    border-bottom: none;
   }
 
   .curiosity-info {
-    height: 45%;
+    height: 55%;
     width: 45%;
-    font-size: 3vh;
+    text-align: justify;
   }
 
   h2 {
-    font-size: 4vh;
+    font-size: 3.5vh;
     text-align: center;
+  }
+
+  ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+
+  li {
+    font-size: 3vh;
   }
 }

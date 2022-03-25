@@ -41,7 +41,7 @@ h2 {
   text-align: center;
 }
 
-ul {
+.genereal-info ul, .curiosity-info ul {
   list-style: none;
   padding: 0;
 }

@@ -79,3 +79,40 @@
   font-size: 2.6vh;
 }
 
+@media screen and (min-width: 500px) and (min-height: 600px) {
+  .divisor {
+    height: 100%;
+    width: 0.3vh;
+    background-color: white;
+  }
+  
+
+  .projects-container {
+    flex-direction: row;
+  }
+  
+  .project-card {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  .card-title {
+    font-size: 4vh;
+    margin-bottom: 3vh;
+  }
+
+  .card-resume {
+    text-align: justify;
+    height: 60%;
+    width: 80%;
+  }
+
+  .card-info-container {
+    height: 30%;
+  }
+  
+  .card-link-container {
+    margin: 0;
+  }
+}

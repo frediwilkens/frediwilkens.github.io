@@ -1,9 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 const address = 'https://frediwilkens.github.io/';
 
 const ProjectCard = ({
-  img,
-  alt,
   title,
   resume,
   techs,
@@ -11,13 +10,6 @@ const ProjectCard = ({
 }) => {
   return (
     <div className="project-card">
-      <div className="card-image-container">
-        <img
-          className="card-image"
-          src={ img }
-          alt={ alt }
-        />
-      </div>
       <div className="card-info-container">
         <h3 className="card-title">{ title }</h3>
         <p className="card-resume">{ resume }</p>
@@ -42,6 +34,13 @@ const ProjectCard = ({
       </div>
     </div>
   )
+}
+
+ProjectCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  resume: PropTypes.string.isRequired,
+  techs: PropTypes.arrayOf(PropTypes.string).isRequired,
+  project: PropTypes.string.isRequired,
 }
 
 export default ProjectCard;

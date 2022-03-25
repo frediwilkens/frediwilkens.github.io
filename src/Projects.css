@@ -75,7 +75,7 @@
 .card-link {
   text-align: center;
   text-decoration: none;
-  color: forestgreen;
+  color: white;
   font-size: 2.6vh;
 }
 
@@ -114,5 +114,14 @@
   
   .card-link-container {
     margin: 0;
+  }
+
+  .card-link {
+    transition: 2s;
+  }
+
+  .card-link:hover{
+    color: #08a6f0;
+    font-size: 4vh;
   }
 }

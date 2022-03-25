@@ -6,7 +6,7 @@ body {
   box-sizing: border-box;
   height: 100vh;
   width: 100vw;
-  background-color: #b2e1cc;
+  background-color: #2d0133;
   font-family: 'Comfortaa', cursive;
 }
 
@@ -31,10 +31,11 @@ body {
 .header-link {
   text-decoration: none;
   color: white;
+  transition: color 2s;
 }
 
 .header-link:hover {
-  color: black;
+  color: rgb(9, 248, 236);
 }
 
 .header-link:active {
@@ -116,8 +117,18 @@ footer {
     font-size: 7vh;
   }
 
+  .linkedin {
+    transition-property: color;
+    transition-duration: 3s;
+  }
+
+  .github {
+    transition-property: color;
+    transition-duration: 1s;
+  }
+
   .linkedin:hover {
-    color: #0e76a8;
+    color: #08a6f0;
   }
   
   .github:hover {

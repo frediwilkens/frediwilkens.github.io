@@ -1,5 +1,5 @@
 import React from 'react'
-import myimage from '../my-image.jpeg';
+import myimage from '../images/my-image.jpeg';
 function HomeContent() {
   return (
     <main className='main-content'>
